@@ -27,10 +27,10 @@ while restart == True :
     for i in questionList:
         print("\n")
         print(displayQ(i) + "\nEnter your answer :")
-        answer = input()
-        if(answer == i[5]) : score += 1
+        answer = input().lower()
+        if(answer == i[5].lower()) : score += 1
         print("\n")
-    print("Your score is ", score)
+    print("Your score is",score)
     answer = ""
     while answer != "Yes" and answer != "No" :
         print("\nWould you like to try again ? (Yes or No) :")
