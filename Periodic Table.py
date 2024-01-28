@@ -32,7 +32,8 @@ while restart == True :
         print("\n")
     if score == 0 : print("Loser ! Your score is ", score)
     elif score == 1 or score == 2 or score == 3 : print("You are really not the best... Your score is ", score)
-    elif score == 4 or score == 5 : print("Good ! Your score is ", score)
+    elif score == 4 : print("Almost perfect ! Your score is ", score)
+    elif score == 5 : print("Perfect ! Your score is ", score)
     answer = ""
     while answer != "Yes" and answer != "No" :
         print("\nWould you like to try again ? (Yes or No) :")
