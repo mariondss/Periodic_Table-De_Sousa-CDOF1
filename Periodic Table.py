@@ -30,6 +30,7 @@ while restart == True :
         answer = input().lower()
         if(answer == i[5].lower()) : score += 1
         print("\n")
+    
     answer = ""
     while answer != "Yes" and answer != "No" :
         print("\nWould you like to try again ? (Yes or No) :")
