@@ -30,7 +30,10 @@ while restart == True :
         answer = input().lower()
         if(answer == i[5].lower()) : score += 1
         print("\n")
-    print("Your score is",score)
+    if score == 0 : print("Loser ! Your score is ", score)
+    elif score == 1 or score == 2 or score == 3 : print("You are really not the best... Your score is ", score)
+    elif score == 4 : print("Almost perfect ! Your score is ", score)
+    elif score == 5 : print("Perfect ! Your score is ", score)
     answer = ""
     while answer != "Yes" and answer != "No" :
         print("\nWould you like to try again ? (Yes or No) :")
