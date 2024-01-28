@@ -6,6 +6,8 @@ Created on Sun Jan 28 18:05:02 2024
 """
 score = 0 
 
+restart = True
+
 question1 = ["What does the letter H represent in the periodic table?", "Helium", "Hydrogen", "Hafnium", "Holmium", "Hydrogen"]
 question2 = ["What does the letter C represent in the periodic table?", "Calcium", "Cobalt", "Carbon", "Curium", "Carbon"]
 question3 = ["What does the letter N represent in the periodic table?", "Neon", "Nickel", "Nitrogen", "Nihonium", "Nitrogen"]
@@ -20,13 +22,21 @@ def displayQ(question):
         result += "- " + i + "\n"
     return result
     
+while restart == True :
+    score = 0
+    for i in questionList:
+        print("\n")
+        print(displayQ(i) + "\nEnter your answer :")
+        answer = input()
+        if(answer == i[5]) : score += 1
+        print("\n")
+    print("Your score is ", score)
+    answer = ""
+    while answer != "Yes" and answer != "No" :
+        print("\nWould you like to try again ? (Yes or No) :")
+        answer = input()
+    if answer == "No" : restart = False
+    
 
-for i in questionList:
-    print("\n")
-    print(displayQ(i) + "\nEnter your answer :")
-    answer = input()
-    if(answer == i[5]) : score += 1
-print("\n")
 
 
-print("Your score is ", score)
