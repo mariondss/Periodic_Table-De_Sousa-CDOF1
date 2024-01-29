@@ -30,7 +30,7 @@ git clone https://github.com/your-username/Periodic_Table-De_Sousa-CDOF1.git
 - Type the following command to run the program:
 
 ```bash
-python Periodic\ Table.py
+python Periodic_Table.py
 ```
 
 ## How to Contribute
